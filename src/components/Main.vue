@@ -61,7 +61,7 @@ const filteredStations = computed<Station[]>(() => {
     </div>
     <div v-else mt-6 flex="~ col" items-center>
       <em text-lg op75>
-        <div>支持线路/车站/首字母搜索</div>
+        <div>支持线路/车站/首字母快捷搜索</div>
         <div my-4>
           e.g.
         </div>
