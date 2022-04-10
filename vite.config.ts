@@ -7,6 +7,7 @@ import Pages from 'vite-plugin-pages'
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Unocss from 'unocss/vite'
+import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
   resolve: {
@@ -41,6 +42,12 @@ export default defineConfig({
     // https://github.com/antfu/unocss
     // see unocss.config.ts for config
     Unocss(),
+
+    // https://github.com/antfu/vite-plugin-pwa
+    VitePWA({
+      registerType: 'autoUpdate',
+      includeAssets: ['favicon.svg'],
+    }),
   ],
 
   // https://github.com/vitest-dev/vitest
