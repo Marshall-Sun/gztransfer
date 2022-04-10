@@ -3,6 +3,7 @@
     "baseUrl": ".",
     "module": "ESNext",
     "target": "es2016",
+    "jsx": "preserve",
     "lib": ["DOM", "ESNext"],
     "strict": true,
     "esModuleInterop": true,

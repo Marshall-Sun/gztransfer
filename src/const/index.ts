@@ -56,6 +56,26 @@ export const LineColorMap: Record<Line, string> = {
   F2: '#f5333f',
 }
 
+export const LineFontColorMap: Record<Line, string> = {
+  1: '#000',
+  2: '#fff',
+  3: '#000',
+  4: '#fff',
+  5: '#fff',
+  6: '#fff',
+  7: '#000',
+  8: '#fff',
+  9: '#000',
+  13: '#fff',
+  14: '#fff',
+  18: '#fff',
+  21: '#fff',
+  22: '#fff',
+  APM: '#fff',
+  GF: '#000',
+  F2: '#fff',
+}
+
 export const LineList = Object.keys(LineNameMap) as Line[]
 
 export interface Station {

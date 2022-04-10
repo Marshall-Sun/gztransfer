@@ -20,9 +20,7 @@ const filteredStations = computed<Station[]>(() => {
   }
 
   return stations.filter(
-    station => [station.name, station.abbr].some(
-      name => name.toLowerCase().includes(substring),
-    ),
+    station => [station.name, station.abbr].some(str => str.includes(substring)),
   )
 })
 
@@ -48,12 +46,31 @@ const filteredStations = computed<Station[]>(() => {
       autofocus
       autocomplete="off"
       p="x-4 y-2"
-      w="250px"
-      text="center"
-      bg="transparent"
+      w-250px
+      text-center
+      bg-transparent
       border="~ rounded gray-300 dark:gray-700"
       outline="none active:none"
     >
   </div>
-  <div>{{ filteredStations }}</div>
+  <div flex justify-center>
+    <div v-if="filteredStations.length" w-500px>
+      <div v-for="card in filteredStations" :key="card.name">
+        <Card :station="card" />
+      </div>
+    </div>
+    <div v-else mt-6 flex="~ col" items-center>
+      <em text-lg op75>
+        <div>支持线路/车站/首字母搜索</div>
+        <div my-4>
+          e.g.
+        </div>
+        <ul style="list-style-type: disc;">
+          <li>8</li>
+          <li>mds</li>
+          <li>磨碟沙</li>
+        </ul>
+      </em>
+    </div>
+  </div>
 </template>
