@@ -46,7 +46,7 @@ export default defineConfig({
     // https://github.com/antfu/vite-plugin-pwa
     VitePWA({
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg', 'safari-pinned-tab.svg'],
+      includeAssets: ['favicon.svg', 'safari-pinned-tab.svg', 'robots.txt'],
       manifest: {
         name: '广州地铁换乘助手',
         short_name: 'GMTA',
