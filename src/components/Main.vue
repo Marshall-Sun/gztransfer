@@ -31,7 +31,7 @@ const filteredStations = computed<Station[]>(() => {
     <div flex justify-center mb-4>
       <img alt="logo" src="/favicon.svg" h-12>
     </div>
-    <p>
+    <p text-2xl>
       广州地铁换乘助手
     </p>
     <p>
@@ -60,13 +60,15 @@ const filteredStations = computed<Station[]>(() => {
       </div>
     </div>
     <div v-else mt-6 flex="~ col" items-center>
-      <em text-lg op75>
+      <em op75>
         <div>支持线路/车站/首字母快捷搜索</div>
         <div my-4>
           e.g.
         </div>
         <ul style="list-style-type: disc;">
           <li>8</li>
+          <li>gf</li>
+          <li>f2</li>
           <li>mds</li>
           <li>磨碟沙</li>
         </ul>

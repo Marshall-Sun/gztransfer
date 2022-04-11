@@ -10,7 +10,7 @@ const { station } = defineProps<{ station: Station }>()
     mt-6 flex="~ col" items-center
     border="~ rounded gray-300 dark:gray-700"
   >
-    <div text-28px my-2>
+    <div text-8 leading-8 my-4>
       {{ station.name }}
     </div>
     <div flex="~ wrap">
@@ -18,7 +18,7 @@ const { station } = defineProps<{ station: Station }>()
         <LineTag :line="line" mx-1 />
       </div>
     </div>
-    <div my-2>
+    <div my-4>
       <div v-for="item in station.transfers" :key="`${item.from}_${item.to}`">
         <span>
           {{ LineNameMap[item.from] }}➡️{{ LineNameMap[item.to] }}
@@ -35,8 +35,8 @@ const { station } = defineProps<{ station: Station }>()
         </span>
       </div>
     </div>
-    <div v-if="station.note" relative w-full py-2 bg="gray-200 dark:gray-800">
-      <em absolute left-1 top-1 text-sm op75>备注</em>
+    <div v-if="station.note" relative w-full py-4 bg="gray-200 dark:gray-800">
+      <i absolute left-1 top-1 text-sm op20 i-carbon:information-filled />
       <div v-for="str in station.note" :key="str">
         {{ str }}
       </div>
