@@ -23,7 +23,6 @@ const filteredStations = computed<Station[]>(() => {
     station => [station.name, station.abbr].some(str => str.includes(substring)),
   )
 })
-
 </script>
 
 <template>
