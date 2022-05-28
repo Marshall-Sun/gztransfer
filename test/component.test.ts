@@ -6,10 +6,9 @@ describe('Main.vue', () => {
   it('should render', () => {
     const wrapper = mount(Main)
     expect(wrapper.text()).toContain('广州地铁换乘助手')
-    expect(wrapper.html()).toMatchSnapshot()
   })
 
-  it('should be interactive', async() => {
+  it('should be interactive', async () => {
     const wrapper = mount(Main)
     await wrapper.get('input').setValue('mds')
     expect(wrapper.text()).toContain('磨碟沙')
