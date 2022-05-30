@@ -1,6 +1,5 @@
 {
   "semanticCommits": "enabled",
-  "lockFileMaintenance": { "enabled": true },
   "extends": [
     "config:base",
     ":preserveSemverRanges"
