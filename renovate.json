@@ -2,6 +2,7 @@
   "semanticCommits": "enabled",
   "extends": [
     "config:base",
+    "schedule:earlyMondays",
     ":preserveSemverRanges"
   ]
 }
