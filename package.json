@@ -22,7 +22,7 @@
     "@vitejs/plugin-vue": "^2.3.3",
     "@vue/test-utils": "^2.0.0",
     "eslint": "^8.17.0",
-    "jsdom": "^19.0.0",
+    "jsdom": "^20.0.0",
     "pnpm": "^7.1.9",
     "typescript": "^4.7.3",
     "unocss": "^0.38.0",
