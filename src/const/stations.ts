@@ -34,7 +34,7 @@ export default [
     lines: [1, 5],
     transfers: [
       { from: 1, to: 5, doorIndex: 7 },
-      { from: 5, to: 1, doorIndex: 9 },
+      { from: 5, to: 1, doorIndex: 8 },
     ],
   },
   {
@@ -199,8 +199,8 @@ export default [
     abbr: 'kc',
     lines: [3, 8],
     transfers: [
-      { from: 3, to: 8, doorIndex: 3 },
-      { from: 8, to: 3, doorIndex: 27 },
+      { from: 3, to: 8, doorIndex: [6, 7] },
+      { from: 8, to: 3, doorIndex: [4, 5, 27] },
     ],
   },
   {
