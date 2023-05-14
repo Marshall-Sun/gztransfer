@@ -199,7 +199,7 @@ export default [
     abbr: 'kc',
     lines: [3, 8],
     transfers: [
-      { from: 3, to: 8, doorIndex: [6, 7] },
+      { from: 3, to: 8, doorIndex: [6, 7, 18, 19] },
       { from: 8, to: 3, doorIndex: [4, 5, 27] },
     ],
   },
